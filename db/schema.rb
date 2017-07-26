@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170726083359) do
+=======
+ActiveRecord::Schema.define(version: 20170726052733) do
+>>>>>>> 3
 
   create_table "cities", force: :cascade do |t|
     t.string   "juhe_id"
@@ -45,6 +49,7 @@ ActiveRecord::Schema.define(version: 20170726083359) do
     t.index ["number"], name: "index_trains_on_number"
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -62,4 +67,6 @@ ActiveRecord::Schema.define(version: 20170726083359) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+=======
+>>>>>>> 3
 end
