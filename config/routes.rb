@@ -1,9 +1,4 @@
 Rails.application.routes.draw do
-  resources :cities do
-    member do
-      post :update_temp
-    end
-  end
 
   namespace :api, :defaults => { :format => :json } do
     namespace :v1 do
@@ -16,5 +11,14 @@ Rails.application.routes.draw do
       delete "/reservations/:booking_code" => "reservations#destroy", :as => :cancel_reservation
     end
   end
+
+
+  resources :cities do
+    member do
+      post :update_temp
+    end
+  end
+
+
 
 end
