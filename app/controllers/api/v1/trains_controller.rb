@@ -15,10 +15,6 @@ class Api::V1::TrainsController < ApiController
   def show
     @train = Train.find_by_number!( params[:train_number] )
 
-    render :json => {
-      :number => @train.number,
-      :available_seats => @train.available_seats
-    }
   end
 
 end
